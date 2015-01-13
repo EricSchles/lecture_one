@@ -23,12 +23,19 @@ public class First{
 		System.out.println(input);
 	} 
 	public static void main(String[] args){
+		
+		ArrayList list = new ArrayList();
 		Tuple first = new Tuple(1,1);
 		Tuple second = new Tuple(8,6);
 		Tuple third = new Tuple(6,8);
 		Tuple fourth = new Tuple(1,3); 
 
-		print(distance(first,fourth));
+		list.add(first);
+		list.add(second);
+		list.add(third);
+		list.add(fourth);
+
+		
 	}
 
 }
