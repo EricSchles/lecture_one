@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.ArrayList;
 
 class Tuple{ 
   public final Integer x; 
@@ -6,6 +7,10 @@ class Tuple{
   public Tuple(Integer x, Integer y) { 
     this.x = x; 
     this.y = y; 
+
+  }
+  public String toString(){
+  	return this.x.toString() + " " + this.y.toString();
   } 
 } 
 
@@ -34,7 +39,9 @@ public class First{
 		list.add(second);
 		list.add(third);
 		list.add(fourth);
-
+		for(Object elem : list){
+			print(elem);
+		}
 		
 	}
 
